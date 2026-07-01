@@ -1,0 +1,107 @@
+{
+  "model": "sales ~ lags + baskets + unique_products + cluster x campaign(lag4)",
+  "r_squared": 0.8616,
+  "r_squared_within": 0.8655,
+  "r_squared_overall": 0.9099,
+  "n_obs": 265178,
+  "n_entities": 2500,
+  "n_time_periods": 102,
+  "params": {
+    "sales_lag1": {
+      "estimate": 0.0321,
+      "std_err": 0.0029,
+      "t_stat": 11.101,
+      "p_value": 0.0,
+      "ci_low": 0.0265,
+      "ci_high": 0.0378
+    },
+    "sales_lag4": {
+      "estimate": 0.017,
+      "std_err": 0.0025,
+      "t_stat": 6.7731,
+      "p_value": 0.0,
+      "ci_low": 0.0121,
+      "ci_high": 0.0219
+    },
+    "baskets": {
+      "estimate": 3.8897,
+      "std_err": 0.2413,
+      "t_stat": 16.119,
+      "p_value": 0.0,
+      "ci_low": 3.4167,
+      "ci_high": 4.3626
+    },
+    "unique_products": {
+      "estimate": 2.7321,
+      "std_err": 0.0196,
+      "t_stat": 139.23,
+      "p_value": 0.0,
+      "ci_low": 2.6936,
+      "ci_high": 2.7705
+    },
+    "campaign_type_TypeA_lag4_X_segment_0": {
+      "estimate": 2.6298,
+      "std_err": 0.5302,
+      "t_stat": 4.9597,
+      "p_value": 0.0,
+      "ci_low": 1.5906,
+      "ci_high": 3.6691
+    },
+    "campaign_type_TypeA_lag4_X_segment_1": {
+      "estimate": -0.1166,
+      "std_err": 0.2059,
+      "t_stat": -0.5663,
+      "p_value": 0.5712,
+      "ci_low": -0.5202,
+      "ci_high": 0.287
+    },
+    "campaign_type_TypeA_lag4_X_segment_2": {
+      "estimate": -1.0678,
+      "std_err": 0.6261,
+      "t_stat": -1.7054,
+      "p_value": 0.0881,
+      "ci_low": -2.2949,
+      "ci_high": 0.1594
+    },
+    "campaign_type_TypeB_lag4_X_segment_0": {
+      "estimate": 2.6571,
+      "std_err": 0.6412,
+      "t_stat": 4.1438,
+      "p_value": 0.0,
+      "ci_low": 1.4003,
+      "ci_high": 3.9139
+    },
+    "campaign_type_TypeB_lag4_X_segment_1": {
+      "estimate": -0.6533,
+      "std_err": 0.2875,
+      "t_stat": -2.2724,
+      "p_value": 0.0231,
+      "ci_low": -1.2168,
+      "ci_high": -0.0898
+    },
+    "campaign_type_TypeB_lag4_X_segment_2": {
+      "estimate": -0.2791,
+      "std_err": 0.1978,
+      "t_stat": -1.4107,
+      "p_value": 0.1583,
+      "ci_low": -0.6669,
+      "ci_high": 0.1087
+    },
+    "campaign_type_TypeC_lag4_X_segment_0": {
+      "estimate": 3.3134,
+      "std_err": 0.7835,
+      "t_stat": 4.2289,
+      "p_value": 0.0,
+      "ci_low": 1.7777,
+      "ci_high": 4.849
+    },
+    "campaign_type_TypeC_lag4_X_segment_1": {
+      "estimate": -0.3187,
+      "std_err": 0.5514,
+      "t_stat": -0.5781,
+      "p_value": 0.5632,
+      "ci_low": -1.3995,
+      "ci_high": 0.762
+    }
+  }
+}
